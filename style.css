@@ -1,0 +1,50 @@
+:root{
+    --bg-color: #eee;
+    --primary:#ec1c24;
+    --secondary:#212d31;
+    --tertiary:#343a40;
+}
+.bg{
+  background-color:var(--bg-color) ;
+  height: 100%;
+}
+.btn-custom{
+    color: var(--primary);
+    border-color:var(--primary);
+    border-radius:1.25rem;
+    width: 8rem;
+}
+.btn-custom:hover, .btn-custom:focus{
+    color: var(--secondary);
+    background-color: var(--primary);
+    border-color:var(--primary);
+    font-weight: bold;
+}
+.form-div, .info{
+height: 100%;
+}
+.info-mail{
+color: var(--secondary);
+}
+.info-mail:hover{
+    color: var(--tertiary);
+    }
+.info-tel{
+    color: var(--primary);
+}
+.info-tel:hover{
+    color: var(--tertiary);
+}
+.underline{
+position: relative;
+}
+.underline::after
+{
+    content: "";
+    height: 0.25rem;
+    width: 3.5rem;
+    background-color: var(--primary);
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+}
